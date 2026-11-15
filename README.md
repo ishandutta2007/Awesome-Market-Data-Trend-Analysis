@@ -1,199 +1,203 @@
-# Awesome-Market-Data-Trend-Analysis
-
 # Awesome Market & Data Trend Analysis
 
-> A curated list of top Market and Data Trend Analysis platforms — both SaaS/Hosted commercial solutions and open-source alternatives for discovering emerging trends, analyzing market data, and tracking competitive intelligence.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Topics](https://img.shields.io/badge/Topics-Market%20Intelligence%20%7C%20Trend%20Analysis-blue.svg)](https://github.com/ishandutta2007/Awesome-Market-Data-Trend-Analysis)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+> A curated list of top Market and Data Trend Analysis platforms — featuring enterprise SaaS/hosted solutions and top open-source alternatives for discovering emerging trends, analyzing market data, tracking competitive intelligence, and building financial intelligence pipelines.
 > 🌟 Star this repo if you find it useful! 🌟
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Google Trends](#google-trends)
-  - [Exploding Topics](#exploding-topics)
-  - [CB Insights](#cb-insights)
-  - [PitchBook](#pitchbook)
-  - [Crunchbase](#crunchbase)
-  - [Similarweb](#similarweb)
-  - [Semrush](#semrush)
 - [Open-Source Software](#-open-source-software)
-  - [TrendPulse](#trendpulse)
-  - [TrendScout Radar](#trendscout-radar)
-  - [Pre-Viral Tracker](#pre-viral-tracker)
-  - [Capbase](#capbase)
+  - [OpenBB](#openbb)
+  - [yfinance](#yfinance)
+  - [ta (Technical Analysis Library in Python)](#ta-technical-analysis-library-in-python)
+  - [pytrends](#pytrends)
   - [SerpBear](#serpbear)
-  - [Alion (LangChain Toolkit)](#alion-langchain-toolkit)
+  - [TrendPulse](#trendpulse)
+  - [Capbase](#capbase)
   - [finasys](#finasys)
-  - [pyita](#pyita)
+  - [TrendScout Radar](#trendscout-radar)
+  - [Alion (LangChain Toolkit)](#alion-langchain-toolkit)
+- [📊 Feature Comparison Matrix](#-feature-comparison-matrix)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global market intelligence and data trend analysis platform market is estimated at **$8.6B to $12.1B** (projected to exceed **$21B by the 2030s** at an 8.2%–9.8% CAGR). The sector is **moderately to highly fragmented** rather than a winner-take-all monopoly: while mega-cap tech conglomerates and institutional incumbents (Google, Morningstar/PitchBook, Semrush) dominate horizontal search, private equity, and search marketing intelligence respectively, hundreds of specialized agile vendors thrive by servicing targeted niches such as early consumer breakout detection, vertical industry telemetry, and developer-first algorithmic intelligence.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Market and Data Trend Analysis platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Market and Data Trend Analysis platforms ranked in descending order by company scale (market capitalization or valuation/revenue).
 
-### Google Trends
-**Type:** Search interest exploration and comparison
-Google Trends is the canonical free tool for exploring search interest over time, comparing keywords, and identifying regional demand. It provides normalized 0–100 interest scores, related queries, and trending searches. **Trade-off:** Values are relative, not absolute volumes, and the UI lacks programmatic access without third-party wrappers.
-
-### Exploding Topics
-**Type:** Early trend discovery for emerging topics
-Exploding Topics surfaces topics that are growing rapidly before they hit mainstream search volume. It is the primary commercial reference for open-source alternatives like Pre-Viral Tracker and TrendScout Radar, which explicitly position themselves as alternatives[citation:4][citation:10].
-
-### CB Insights
-**Type:** Market intelligence and startup data
-CB Insights provides market maps, company profiles, funding data, and trend analysis for venture capital and corporate strategy teams. It is a premium commercial platform with no direct open-source equivalent, though Capbase offers a community-driven funding database alternative[citation:8].
-
-### PitchBook
-**Type:** Private capital market data
-PitchBook provides comprehensive data on private companies, investors, fundings, and M&A activity. Like CB Insights, it is a premium commercial platform, with Capbase positioning itself as a free open-source alternative for funding data[citation:8].
-
-### Crunchbase
-**Type:** Startup and company intelligence
-Crunchbase provides company profiles, funding rounds, investor data, and market trends. It is the most widely recognized startup database, with Capbase explicitly positioned as a free open-source alternative[citation:8].
-
-### Similarweb
-**Type:** Website traffic and competitive intelligence
-Similarweb provides website traffic estimates, rankings, audience insights, and competitor analysis. It is the commercial benchmark for traffic intelligence, with open-source alternatives like SerpBear focusing on the SEO-driven estimation angle[citation:3][citation:13].
-
-### Semrush
-**Type:** SEO and competitive research
-Semrush provides keyword research, competitor analysis, backlink data, and traffic estimates. SerpBear is positioned as the closest open-source alternative to its core keyword-ranking logic[citation:13].
+| Platform | Category / Focus | Company Scale (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Free Trial Limits | Key Strengths |
+|:---|:---|:---|:---|:---|:---|
+| **[Google Trends](https://trends.google.com)** | Search Interest & Macro Trends | **$3.5T+ Market Cap** (Alphabet / ~$400B+ Ann. Rev.) | **Free** ($0) / Scraper APIs start ~$25/mo | **Free forever plan**: Unlimited search queries on web interface; 0–100 normalized scores; 5 concurrent keyword comparisons | Unrivaled global search query sample size; historical query trends dating back to 2004; geographic drilldowns. |
+| **[PitchBook](https://pitchbook.com)** | Private Capital & VC/PE Deal Intelligence | **Subsidiary of Morningstar** ($14B+ Cap; PitchBook rev. ~$671M) | **~$12,000 / year** ($1,000/mo single seat) | **No free-forever plan**; vetted trial only upon sales qualification (typically 7–14 days with export restrictions) | Industry-standard valuation multiples, deal terms, cap table estimates, and institutional LP/GP allocations. |
+| **[Semrush](https://www.semrush.com)** | Search Trend & Competitive Traffic Intelligence | **~$1.6B Valuation** (~$443M Ann. Rev.) | **$139.00 / month** ($117.33/mo billed annually) | **Free forever plan**: 10 daily searches/reports across domain & keyword analytics; 1 demo project with 10 tracked keywords | Comprehensive digital market visibility, competitive search volume tracking, backlink intelligence, and SERP trends. |
+| **[Similarweb](https://www.similarweb.com)** | Web Traffic & Digital Market Intelligence | **~$700M Market Cap** (NYSE: SMWB; ~$282M Ann. Rev.) | **$125.00 / month** (billed annually, or $199/mo monthly) | **7-day free trial** with credit card required (capped at 1 seat, 3 months historical data, and no raw bulk exports) | Global website traffic estimation, referral source attribution, audience overlap analytics, and funnel conversion tracking. |
+| **[Crunchbase](https://www.crunchbase.com)** | Startup Funding & Growth Market Signals | **~$150M Valuation** (~$35M–$40M Ann. Rev.) | **$49.00 / month** (billed annually for new users; $99/mo monthly) | **Free forever plan**: Access to basic company profiles with search results capped at first 5 rows and 0 data exports; 7-day Pro free trial available | Definitive database of venture funding rounds, active investors, executive leadership, and emerging startup signals. |
+| **[CB Insights](https://www.cbinsights.com)** | Tech Market Maps & Emerging Industry Signals | **~$75M–$80M ARR** (Private / Bootstrapped) | **~$24,700 / year** (Median contract ~$47,000/year) | **10-day free trial** with corporate email verification (no credit card required; access to terminal and AI agent reports) | Proprietary tech vendor mosaics, emerging technology heatmaps, patent landscaping, and earnings call transcript mining. |
+| **[Exploding Topics](https://explodingtopics.com)** | Rapid Pre-Viral Consumer & Market Trends | **Acquired by Semrush** (~$1M–$3M ARR) | **$39.00 / month** (billed annually at $468/yr) | **Free forever plan**: Public trending topics database with basic weekly newsletter; 7-day trial of Pro features | Algorithmic early-signal detection of products, technologies, and consumer keywords before hitting mainstream search volume. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Market and Data Trend Analysis tools. The open-source ecosystem spans **multi-source trend aggregators**, **early-signal detection engines**, **community-driven funding databases**, **SEO traffic estimators**, **company intelligence toolkits**, and **financial data processing libraries**.
+Self-hosted, community-driven Market and Data Trend Analysis tools and libraries, sorted in descending order by GitHub stargazers.
 
-### TrendPulse
-**Stack:** Python / SQLite / MCP | **License:** Open Source (PyPI)
-TrendPulse is a global open-source agentic trend intelligence platform with **35+ sources**, a plugin system, vector search, trend clustering, lifecycle prediction, a 6-agent content factory, a web dashboard, and a **23-tool MCP server** . Key capabilities include:
-- **Multi-source aggregation**: Google Trends, Hacker News, Mastodon, Bluesky, Wikipedia, GitHub, PyPI, Google News, Lobsters, dev.to, npm, CoinGecko, Docker Hub, Stack Overflow, arXiv, Product Hunt, Lemmy, Dcard, and PTT[citation:1][citation:12]
-- **Velocity tracking**: With history data saved to SQLite, each trend includes direction (rising/stable/declining) and velocity score[citation:12]
-- **Normalized scoring**: Each item has a 0–100 score for cross-source comparison[citation:1]
-- **Custom sources**: Simple `TrendSource` subclasses return `list[TrendItem]`[citation:1]
-- **MCP server**: 23 tools for AI agent integration[citation:12]
-
-Deploys as a CLI (`trend-pulse trending --save`) with optional web dashboard. **Trade-off:** Source coverage varies by region and rate limits (e.g., Google Trends RSS is unlimited, PyPI Stats is 1 req/day)[citation:1].
-**Best for:** Teams wanting a comprehensive, multi-source trend aggregation platform with velocity tracking and AI agent integration via MCP.
-
-### TrendScout Radar
-**Stack:** Python / GitHub Actions | **License:** Open Source (GitHub)
-TrendScout Radar is an open-source trend radar that tracks what's trending on **TikTok, YouTube, Reddit, Google, X, and Hacker News** for your topics, pushing alerts to Telegram, Discord, Slack, or email . It is explicitly positioned as an **Exploding Topics alternative**[citation:4]. Key characteristics:
-- **Topic-based alerts**: Each topic matches items by title keywords, with configurable alert channels and schedules
-- **Breakout detection**: A term trending on 3+ platforms simultaneously is flagged as a breakout
-- **Free tier**: Google Trends, Hacker News front page, and per-topic Google News/Hacker News search run without any API key
-- **Paid tier (Scavio)**: TikTok, Reddit, X, YouTube require a Scavio key (~7 credits per scan)
-- **Deployment**: Self-hosted or free on GitHub Actions
-
-**Best for:** Marketers and creators wanting self-hosted trend monitoring with multi-platform breakout detection and alerting to messaging channels.
-
-### Pre-Viral Tracker
-**Stack:** Python / FastAPI | **License:** Open Source (GitHub)
-Pre-Viral Tracker is a full-stack trend discovery engine that **detects accelerating niche topics before they hit mainstream** . It is explicitly positioned as an **Exploding Topics or Glimpse alternative** that runs locally[citation:10]. Key characteristics:
-- **Velocity and acceleration signals**: Computes volume (0–100), velocity (first derivative), acceleration (second derivative), and R² confidence
-- **Pre-Viral Score**: A composite 0–100 score combining all signals, with an exponential bonus (×1.3) for keywords fitting an exponential curve
-- **Regional discovery**: Scans 8 regions including Global, US, UK, and EU Big 4
-- **Mock data fallback**: Synthetic data fills gaps when APIs are rate-limited
-- **Architecture**: FastAPI REST API with 13 endpoints
-
-**Trade-off:** It is a locally-run application rather than a hosted service—you operate the FastAPI server and database yourself.
-**Best for:** Analysts wanting a quantitative, locally-run early-signal detector with velocity/acceleration scoring and regional discovery.
-
-### Capbase
-**Stack:** Community-driven | **License:** Open Source
-Capbase is an open-source alternative to **Crunchbase and PitchBook**, built as a community-filled funding database[citation:8]. Key characteristics:
-- **Community-driven**: Share a funding round or fix a company's details, and once approved, every profile unlocks for 30 days free
-- **Data sources**: Pulls from SEC filings, SBIR, Innovate UK, Companies House, and Wikidata
-- **Positioning**: Explicitly addresses frustration with paying thousands a year just to see who funded a startup
-
-**Trade-off:** It is a community database rather than a comprehensive intelligence platform—coverage depends on contributions and the listed public sources.
-**Best for:** Founders, investors, and researchers wanting a free, community-maintained funding database without Crunchbase/PitchBook subscription costs.
-
-### SerpBear
-**Stack:** (Check repository) | **License:** Open Source
-SerpBear is an open-source SEO rank tracker that estimates competitor traffic using the **"keyword ranking × search volume"** model, making it the closest open-source alternative to Semrush's core traffic estimation logic[citation:13]. It provides keyword rank tracking and traffic estimation based on search visibility. **Trade-off:** It estimates traffic from SEO signals rather than providing direct traffic measurement like Similarweb.
-**Best for:** SEO teams and marketers wanting open-source keyword rank tracking with traffic estimation, particularly those frustrated with Semrush pricing.
-
-### Alion (LangChain Toolkit)
-**Stack:** Python / LangChain / MCP | **License:** Open Source (PyPI)
-Alion provides LangChain tools for a **live graph of companies worldwide**, including what each one does, where it operates, tech stack, funding rounds and investors, hiring velocity, and pay statistics . It is positioned for agents that need prospect lists, company enrichment, lookalike discovery, investor research, and market pay data[citation:2]. Key capabilities:
-- **Company search**: By industry, country, size, founding year, startup status, funding stage, recent rounds, investor, technology, ATS, hiring, and growth level
-- **Lookalikes**: Find similar companies
-- **Counterparty verification**: Check whether a domain, site, email, or agent is a real, active counterparty
-- **Job and pay data**: Verified job postings and market pay percentiles
-- **Free tier**: Company search, lookalikes, resolve, counterparty check, and job search work without an API key (300 calls/day)
-
-**Trade-off:** It is a **toolkit for AI agents**, not a standalone dashboard—you integrate it into a LangChain or MCP workflow.
-**Best for:** Developers building AI agents for market research, prospecting, or competitive intelligence who need structured company data via a free API.
-
-### finasys
-**Stack:** Python / Polars | **License:** Open Source (PyPI)
-finasys is a financial data processing toolkit for **ML pipelines and AI agents**, explicitly designed to go from raw market data to ML-ready features in a few lines of code[citation:5]. Key capabilities:
-- **Data loading**: Single `fs.load()` entry point for Yahoo Finance, CSV, and Parquet, with DuckDB-backed caching
-- **Feature engineering**: 15+ technical indicators (RSI, MACD, Bollinger Bands, ATR, VWAP, OBV, Stochastic, ADX, CCI, Williams %R, MFI, ROC, Momentum), returns, rolling statistics, and lag features
-- **Target engineering**: Forward returns, classification labels, triple-barrier labeling (Lopez de Prado method), and volatility-adjusted labels
-- **Market regime features**: Volatility regimes, trend strength, and distribution features
-- **Performance**: Polars-native, 10-100x faster than pandas-ta with zero C dependencies
-
-**Trade-off:** It is a **data processing library** rather than a trend dashboard—you build the analysis and visualization on top.
-**Best for:** Quant developers and data scientists wanting fast, dependency-free financial feature engineering for ML pipelines.
-
-### pyita
-**Stack:** Python | **License:** Open Source (PyPI)
-pyita is a technical analysis library for calculating indicators from OHLCV data, with a simple `Quotes` object that can be constructed from numpy arrays, pandas DataFrames, CCXT exchange data, or dictionaries[citation:11]. Key indicators include:
-- **Moving averages**: SMA, EMA, TEMA, VWMA, and a universal `ma()` function
-- **Trend indicators**: ADX, Aroon, Parabolic SAR, Supertrend
-- **Bollinger Bands**: With upper, middle, and lower lines
-
-**Trade-off:** It is a calculation library, not a trend analysis platform—you supply the data and interpret the indicators.
-**Best for:** Python developers wanting a lightweight, dependency-free technical analysis library for building custom market analysis tools.
+### OpenBB
+[![GitHub stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers)  
+**Stack:** Python / FastAPI | **License:** AGPL-3.0 / Commercial  
+OpenBB (formerly Gamestonk Terminal) is the leading open-source investment research software platform. It provides an institutional-grade, modular financial terminal and Python data engine aggregating equities, macro trends, cryptocurrencies, venture capital, and options data across dozens of free and premium financial data vendors.  
+- **Multi-Asset Intelligence:** Deep fundamental data, macro charts, economic releases, and insider transactions.
+- **Agent Integration:** First-class support for LLM-powered market data retrieval and custom copilot plugins.  
+**Best for:** Financial analysts, quants, and developers seeking an open-source terminal alternative to Bloomberg or PitchBook.
 
 ---
 
-## 📊 Comparison at a Glance
+### yfinance
+[![GitHub stars](https://img.shields.io/github/stars/ranaroussi/yfinance?style=social&color=white)](https://github.com/ranaroussi/yfinance/stargazers)  
+**Stack:** Python | **License:** Apache-2.0  
+yfinance provides a robust, threaded Python client to fetch historical market data, fundamental metrics, option chains, and corporate actions from Yahoo! Finance. It serves as the primary data extraction layer for thousands of open-source algorithmic trading and market analysis systems.  
+- **High-Resolution Data:** Pulls intraday, daily, and long-term historical price and volume time series.
+- **Financial Statements:** Direct access to quarterly balance sheets, cash flow statements, and earnings estimates.  
+**Best for:** Python developers and data scientists needing friction-free market pricing data for time-series modeling.
 
-| Software | License | Stack | Trend Discovery | Funding Data | Traffic Estimation | Self-Hosted | Best For |
-|----------|---------|-------|-----------------|--------------|---------------------|-------------|----------|
-| **Google Trends** | Proprietary | Cloud | ✅ | ❌ | ❌ | ❌ | Search interest baseline |
-| **Exploding Topics** | Proprietary | Cloud | ✅ Early signals | ❌ | ❌ | ❌ | Emerging topic discovery |
-| **CB Insights** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Market intelligence |
-| **PitchBook** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Private capital data |
-| **Crunchbase** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Startup intelligence |
-| **Similarweb** | Proprietary | Cloud | ❌ | ❌ | ✅ | ❌ | Website traffic intel |
-| **Semrush** | Proprietary | Cloud | ❌ | ❌ | ✅ | ❌ | SEO competitive research |
-| **TrendPulse** | Open Source | Python/SQLite | ✅ 35+ sources | ❌ | ❌ | ✅ | Multi-source aggregation + MCP |
-| **TrendScout Radar** | Open Source | Python/Actions | ✅ Breakouts | ❌ | ❌ | ✅ | Topic alerts + multi-platform |
-| **Pre-Viral Tracker** | Open Source | Python/FastAPI | ✅ Acceleration | ❌ | ❌ | ✅ | Early-signal scoring |
-| **Capbase** | Open Source | Community | ❌ | ✅ | ❌ | ✅ | Free funding database |
-| **SerpBear** | Open Source | (Check) | ❌ | ❌ | ✅ SEO-based | ✅ | Keyword rank + traffic estimate |
-| **Alion** | Open Source | Python/LangChain | ❌ | ✅ (via API) | ❌ | ✅ (Toolkit) | AI agent company data |
-| **finasys** | Open Source | Python/Polars | ❌ (Market data) | ❌ | ❌ | ✅ (Library) | ML-ready financial features |
-| **pyita** | Open Source | Python | ❌ (Indicators) | ❌ | ❌ | ✅ (Library) | Technical analysis calc |
+---
+
+### ta (Technical Analysis Library in Python)
+[![GitHub stars](https://img.shields.io/github/stars/bukosabino/ta?style=social&color=white)](https://github.com/bukosabino/ta/stargazers)  
+**Stack:** Python / Pandas / NumPy | **License:** MIT  
+A comprehensive technical analysis library that computes over 40 technical indicators on top of Pandas DataFrames. It is built to extract trend signals, momentum shifts, volatility cycles, and volume accumulations from raw market price feeds.  
+- **Indicator Suite:** Moving averages (EMA, SMA, VWAP), MACD, Bollinger Bands, RSI, Ichimoku, ADX, and ATR.
+- **Clean Feature Extraction:** Outputs clean, normalized DataFrame columns ideal for machine learning pipelines.  
+**Best for:** Quantitative analysts and traders building algorithmic trend filters and trading bots.
+
+---
+
+### pytrends
+[![GitHub stars](https://img.shields.io/github/stars/GeneralMills/pytrends?style=social&color=white)](https://github.com/GeneralMills/pytrends/stargazers)  
+**Stack:** Python | **License:** Apache-2.0  
+pytrends is the unofficial Python API wrapper for Google Trends. It automates the extraction of normalized search interest over time, regional interest heatmaps, related search topics, and real-time trending queries without manual UI interaction.  
+- **Automated Ingestion:** Programmatically extracts 0–100 interest scores for single or batched keywords.
+- **Discovery Tools:** Queries Google's suggestion endpoint for auto-completion trends and breakout queries.  
+**Best for:** Growth hackers, marketers, and researchers running automated consumer demand trend scripts.
+
+---
+
+### SerpBear
+[![GitHub stars](https://img.shields.io/github/stars/towfiqi/serpbear?style=social&color=white)](https://github.com/towfiqi/serpbear/stargazers)  
+**Stack:** Node.js / Next.js / Docker | **License:** MIT  
+SerpBear is an open-source, self-hosted SEO search position tracker and competitive visibility dashboard. It estimates search traffic volume using the classical keyword ranking multiplied by search volume model, providing an open-source alternative to the core tracking features of Semrush and Ahrefs.  
+- **Competitor Tracking:** Tracks daily keyword positions and SERP movement across mobile and desktop.
+- **Direct Console Integration:** Integrates with Google Search Console for verified CTR and impression telemetry.  
+**Best for:** SEO teams and digital marketers seeking private, self-hosted competitor rank tracking without recurring SaaS fees.
+
+---
+
+### TrendPulse
+[![GitHub stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=social&color=white)](https://github.com/claude-world/trend-pulse/stargazers)  
+**Stack:** Python / SQLite / MCP | **License:** MIT  
+TrendPulse is a multi-source agentic trend intelligence platform and MCP server. It connects to 35+ free data sources (including Google Trends RSS, Hacker News, Bluesky, Mastodon, Reddit, PyPI, and GitHub) to discover, cluster, and score accelerating topics across developer and mainstream ecosystems.  
+- **Velocity Scoring:** Tracks trend acceleration and directional velocity stored in local SQLite databases.
+- **MCP Server Support:** Features built-in Model Context Protocol tools for native Claude Code and AI agent integrations.  
+**Best for:** Creators and AI agent developers building automated multi-platform trend-scanning bots.
+
+---
+
+### Capbase
+[![GitHub stars](https://img.shields.io/github/stars/robertwt7/capbase?style=social&color=white)](https://github.com/robertwt7/capbase/stargazers)  
+**Stack:** Open Web / Community Database | **License:** Open Source  
+Capbase is a community-driven open-source alternative to Crunchbase and PitchBook. It aggregates venture capital funding rounds, founder profiles, and company registries by harvesting public filings (SEC EDGAR, UK Companies House, SBIR grants, and Wikidata).  
+- **Crowdsourced Intelligence:** Contributors unlock complete database access by submitting or verifying company funding rounds.
+- **Public Data Grounding:** Focuses on verified regulatory filings rather than paywalled promotional releases.  
+**Best for:** Founders, angel investors, and venture scouts seeking startup funding records without expensive corporate tiers.
+
+---
+
+### finasys
+[![GitHub stars](https://img.shields.io/github/stars/zawster/finasys?style=social&color=white)](https://github.com/zawster/finasys/stargazers)  
+**Stack:** Python / Polars / DuckDB | **License:** MIT  
+finasys is a high-performance financial feature engineering and data processing toolkit tailored for machine learning pipelines and quantitative AI agents. Built natively on Polars and DuckDB, it executes 10x–100x faster than traditional Pandas-based indicator packages.  
+- **Quantitative Labeling:** Generates forward returns, volatility regimes, and triple-barrier classification labels.
+- **Instant Caching:** Ingests parquet, CSV, and Yahoo Finance data directly into cached columnar memory.  
+**Best for:** Machine learning engineers and quant developers building high-throughput financial prediction models.
+
+---
+
+### TrendScout Radar
+[![GitHub stars](https://img.shields.io/github/stars/scavio-ai/trendscout-radar?style=social&color=white)](https://github.com/scavio-ai/trendscout-radar/stargazers)  
+**Stack:** Python / GitHub Actions | **License:** Open Source  
+An open-source multi-platform trend scanner that monitors emerging topics across TikTok, YouTube, Reddit, Google, and Hacker News. Positioned as an open-source Exploding Topics competitor, it flags breakout topics when a keyword trends simultaneously across 3+ platforms and sends alerts directly to Slack, Discord, and Telegram.  
+- **Cross-Platform Correlation:** Flags multi-network breakout topics before they hit mainstream search volume.
+- **Zero-Infrastructure Execution:** Runs seamlessly via scheduled GitHub Actions workflows.  
+**Best for:** Social media strategists, e-commerce scouts, and content creators monitoring viral shifts.
+
+---
+
+### Alion (LangChain Toolkit)
+[![GitHub stars](https://img.shields.io/github/stars/alion-io/alion-sdk?style=social&color=white)](https://github.com/alion-io/alion-sdk/stargazers)  
+**Stack:** Python / LangChain / MCP | **License:** Apache-2.0  
+Alion provides LangChain tools and MCP connectors for a live global knowledge graph of companies worldwide. It enables autonomous AI agents to query verified company profiles, technology stacks, funding stages, hiring velocity, and competitor lookalikes.  
+- **Agentic Market Research:** Enables LLM reasoning loops to look up company firmographics and counterparty validity.
+- **Free Developer API:** Includes 300 free API queries per day without upfront payment requirements.  
+**Best for:** Developers building autonomous AI agents for B2B competitive intelligence and corporate research.
+
+---
+
+## 📊 Feature Comparison Matrix
+
+| Platform / Tool | Type | License / Model | Trend Discovery | Company & Funding Data | Traffic & SEO Analytics | Self-Hosted | Primary Target Audience |
+|:---|:---|:---|:---:|:---:|:---:|:---:|:---|
+| **Google Trends** | SaaS | Free Proprietary | ✅ | ❌ | ❌ | ❌ | Marketers & macro researchers |
+| **PitchBook** | SaaS | Enterprise Proprietary | ✅ | ✅ | ❌ | ❌ | Institutional investors, PE/VC & M&A |
+| **Semrush** | SaaS | Tiered Subscription | ❌ | ❌ | ✅ | ❌ | SEO agencies & search marketers |
+| **Similarweb** | SaaS | Tiered Subscription | ❌ | ❌ | ✅ | ❌ | Digital strategists & media buyers |
+| **Crunchbase** | SaaS | Freemium Subscription | ✅ | ✅ | ❌ | ❌ | Startup scouts, founders & sales reps |
+| **CB Insights** | SaaS | Enterprise Annual | ✅ | ✅ | ❌ | ❌ | Corporate innovation & strategy teams |
+| **Exploding Topics** | SaaS | Freemium Subscription | ✅ | ❌ | ❌ | ❌ | Content creators, investors & founders |
+| **OpenBB** | Open Source | AGPL-3.0 | ✅ | ✅ | ❌ | ✅ | Quants, hedge funds & financial analysts |
+| **yfinance** | Open Source | Apache-2.0 | ❌ | ❌ | ❌ | ✅ | Algorithmic traders & data scientists |
+| **ta** | Open Source | MIT | ✅ | ❌ | ❌ | ✅ | Quant researchers & indicator developers |
+| **pytrends** | Open Source | Apache-2.0 | ✅ | ❌ | ❌ | ✅ | Data engineers & growth hackers |
+| **SerpBear** | Open Source | MIT | ❌ | ❌ | ✅ | ✅ | Indie hackers & SEO specialists |
+| **TrendPulse** | Open Source | MIT | ✅ | ❌ | ❌ | ✅ | AI agent engineers & trend analysts |
+| **Capbase** | Open Source | Community Open | ❌ | ✅ | ❌ | ✅ | Researchers & bootstrapped founders |
+| **finasys** | Open Source | MIT | ❌ | ❌ | ❌ | ✅ | ML engineers & high-frequency quants |
+| **TrendScout Radar** | Open Source | Open Source | ✅ | ❌ | ❌ | ✅ | Social media strategists & creators |
+| **Alion SDK** | Open Source | Apache-2.0 | ❌ | ✅ | ❌ | ✅ | LangChain / AI agent builders |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Market or Data Trend Analysis tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you maintain or use an open-source market data, trend forecasting, or competitive intelligence project that belongs here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+1. Fork this repository.
+2. Create a dedicated branch: `git checkout -b feature/add-new-tool`.
+3. Add the project under the **Open-Source Software** section with:
+   - Project name and repository link
+   - Social star count badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page
+   - Tech stack and license
+   - Summary of capabilities and ideal use case
+4. Update the **Table of Contents** and **Comparison Matrix**.
+5. Submit a pull request.
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the open-source ecosystem:** The open-source landscape for market and trend analysis is **fragmented across distinct layers** rather than unified platforms. For **trend discovery**, **TrendPulse** is the most comprehensive multi-source aggregator with 35+ sources and MCP support[citation:1][citation:12], while **TrendScout Radar** and **Pre-Viral Tracker** offer focused alternatives with breakout detection and acceleration scoring respectively[citation:4][citation:10]. For **company and funding data**, **Capbase** fills the Crunchbase/PitchBook gap with a community-driven model[citation:8], and **Alion** provides structured company intelligence as a toolkit for AI agents[citation:2]. For **traffic and SEO intelligence**, **SerpBear** offers keyword rank tracking with traffic estimation as a Semrush alternative[citation:13]. For **financial data processing**, **finasys** and **pyita** provide the computational foundation for market analysis[citation:5][citation:11]. No single open-source project replicates the full breadth of CB Insights or Similarweb, but these tools cover the core layers of trend discovery, company intelligence, and financial analysis for self-hosted workflows.
+Please verify that the repository is genuinely open-source, actively maintained, and relevant to market and trend intelligence workflows.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository and curated collection are released under the [CC0 1.0 Universal (Public Domain Dedication)](http://creativecommons.org/publicdomain/zero/1.0/). Listed software tools, brand names, and trademarks belong to their respective copyright holders.
