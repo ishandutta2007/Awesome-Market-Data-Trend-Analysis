@@ -68,7 +68,7 @@ Commercial, cloud-hosted Market and Data Trend Analysis platforms ranked in desc
 Self-hosted, community-driven Market and Data Trend Analysis tools and libraries, sorted in descending order by GitHub stargazers 🌟.
 
 ### OpenBB
-[![GitHub stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers)  
 **Stack:** Python / FastAPI 🐍 | **License:** AGPL-3.0 / Commercial ⚖️  
 OpenBB (formerly Gamestonk Terminal) is the leading open-source investment research software platform. It provides an institutional-grade, modular financial terminal and Python data engine aggregating equities, macro trends, cryptocurrencies, venture capital, and options data across dozens of free and premium financial data vendors.  
 - **Multi-Asset Intelligence:** Deep fundamental data, macro charts, economic releases, and insider transactions.
@@ -78,7 +78,7 @@ OpenBB (formerly Gamestonk Terminal) is the leading open-source investment resea
 ---
 
 ### yfinance
-[![GitHub stars](https://img.shields.io/github/stars/ranaroussi/yfinance?style=social&color=white)](https://github.com/ranaroussi/yfinance/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/ranaroussi/yfinance?style=social&color=white)](https://github.com/ranaroussi/yfinance/stargazers)  
 **Stack:** Python 🐍 | **License:** Apache-2.0 ⚖️  
 yfinance provides a robust, threaded Python client to fetch historical market data, fundamental metrics, option chains, and corporate actions from Yahoo! Finance. It serves as the primary data extraction layer for thousands of open-source algorithmic trading and market analysis systems.  
 - **High-Resolution Data:** Pulls intraday, daily, and long-term historical price and volume time series.
@@ -88,7 +88,7 @@ yfinance provides a robust, threaded Python client to fetch historical market da
 ---
 
 ### ta (Technical Analysis Library in Python)
-[![GitHub stars](https://img.shields.io/github/stars/bukosabino/ta?style=social&color=white)](https://github.com/bukosabino/ta/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/bukosabino/ta?style=social&color=white)](https://github.com/bukosabino/ta/stargazers)  
 **Stack:** Python / Pandas / NumPy 🐼 | **License:** MIT ⚖️  
 A comprehensive technical analysis library that computes over 40 technical indicators on top of Pandas DataFrames. It is built to extract trend signals, momentum shifts, volatility cycles, and volume accumulations from raw market price feeds.  
 - **Indicator Suite:** Moving averages (EMA, SMA, VWAP), MACD, Bollinger Bands, RSI, Ichimoku, ADX, and ATR.
@@ -98,7 +98,7 @@ A comprehensive technical analysis library that computes over 40 technical indic
 ---
 
 ### pytrends
-[![GitHub stars](https://img.shields.io/github/stars/GeneralMills/pytrends?style=social&color=white)](https://github.com/GeneralMills/pytrends/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/GeneralMills/pytrends?style=social&color=white)](https://github.com/GeneralMills/pytrends/stargazers)  
 **Stack:** Python 🐍 | **License:** Apache-2.0 ⚖️  
 pytrends is the unofficial Python API wrapper for Google Trends. It automates the extraction of normalized search interest over time, regional interest heatmaps, related search topics, and real-time trending queries without manual UI interaction.  
 - **Automated Ingestion:** Programmatically extracts 0–100 interest scores for single or batched keywords.
@@ -108,7 +108,7 @@ pytrends is the unofficial Python API wrapper for Google Trends. It automates th
 ---
 
 ### SerpBear
-[![GitHub stars](https://img.shields.io/github/stars/towfiqi/serpbear?style=social&color=white)](https://github.com/towfiqi/serpbear/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/towfiqi/serpbear?style=social&color=white)](https://github.com/towfiqi/serpbear/stargazers)  
 **Stack:** Node.js / Next.js / Docker 🐳 | **License:** MIT ⚖️  
 SerpBear is an open-source, self-hosted SEO search position tracker and competitive visibility dashboard. It estimates search traffic volume using the classical keyword ranking multiplied by search volume model, providing an open-source alternative to the core tracking features of Semrush and Ahrefs.  
 - **Competitor Tracking:** Tracks daily keyword positions and SERP movement across mobile and desktop.
@@ -118,7 +118,7 @@ SerpBear is an open-source, self-hosted SEO search position tracker and competit
 ---
 
 ### TrendPulse
-[![GitHub stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=social&color=white)](https://github.com/claude-world/trend-pulse/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=social&color=white)](https://github.com/claude-world/trend-pulse/stargazers)  
 **Stack:** Python / SQLite / MCP 🤖 | **License:** MIT ⚖️  
 TrendPulse is a multi-source agentic trend intelligence platform and MCP server. It connects to 35+ free data sources (including Google Trends RSS, Hacker News, Bluesky, Mastodon, Reddit, PyPI, and GitHub) to discover, cluster, and score accelerating topics across developer and mainstream ecosystems.  
 - **Velocity Scoring:** Tracks trend acceleration and directional velocity stored in local SQLite databases.
@@ -128,7 +128,7 @@ TrendPulse is a multi-source agentic trend intelligence platform and MCP server.
 ---
 
 ### Capbase
-[![GitHub stars](https://img.shields.io/github/stars/robertwt7/capbase?style=social&color=white)](https://github.com/robertwt7/capbase/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/robertwt7/capbase?style=social&color=white)](https://github.com/robertwt7/capbase/stargazers)  
 **Stack:** Open Web / Community Database 🌐 | **License:** Open Source ⚖️  
 Capbase is a community-driven open-source alternative to Crunchbase and PitchBook. It aggregates venture capital funding rounds, founder profiles, and company registries by harvesting public filings (SEC EDGAR, UK Companies House, SBIR grants, and Wikidata).  
 - **Crowdsourced Intelligence:** Contributors unlock complete database access by submitting or verifying company funding rounds.
@@ -138,7 +138,7 @@ Capbase is a community-driven open-source alternative to Crunchbase and PitchBoo
 ---
 
 ### finasys
-[![GitHub stars](https://img.shields.io/github/stars/zawster/finasys?style=social&color=white)](https://github.com/zawster/finasys/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/zawster/finasys?style=social&color=white)](https://github.com/zawster/finasys/stargazers)  
 **Stack:** Python / Polars / DuckDB ⚡ | **License:** MIT ⚖️  
 finasys is a high-performance financial feature engineering and data processing toolkit tailored for machine learning pipelines and quantitative AI agents. Built natively on Polars and DuckDB, it executes 10x–100x faster than traditional Pandas-based indicator packages.  
 - **Quantitative Labeling:** Generates forward returns, volatility regimes, and triple-barrier classification labels.
@@ -148,7 +148,7 @@ finasys is a high-performance financial feature engineering and data processing 
 ---
 
 ### TrendScout Radar
-[![GitHub stars](https://img.shields.io/github/stars/scavio-ai/trendscout-radar?style=social&color=white)](https://github.com/scavio-ai/trendscout-radar/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/scavio-ai/trendscout-radar?style=social&color=white)](https://github.com/scavio-ai/trendscout-radar/stargazers)  
 **Stack:** Python / GitHub Actions 📡 | **License:** Open Source ⚖️  
 An open-source multi-platform trend scanner that monitors emerging topics across TikTok, YouTube, Reddit, Google, and Hacker News. Positioned as an open-source Exploding Topics competitor, it flags breakout topics when a keyword trends simultaneously across 3+ platforms and sends alerts directly to Slack, Discord, and Telegram.  
 - **Cross-Platform Correlation:** Flags multi-network breakout topics before they hit mainstream search volume.
@@ -158,7 +158,7 @@ An open-source multi-platform trend scanner that monitors emerging topics across
 ---
 
 ### Alion (LangChain Toolkit)
-[![GitHub stars](https://img.shields.io/github/stars/alion-io/alion-sdk?style=social&color=white)](https://github.com/alion-io/alion-sdk/stargazers)  
+[![GitHub_Stars](https://img.shields.io/github/stars/alion-io/alion-sdk?style=social&color=white)](https://github.com/alion-io/alion-sdk/stargazers)  
 **Stack:** Python / LangChain / MCP 🔗 | **License:** Apache-2.0 ⚖️  
 Alion provides LangChain tools and MCP connectors for a live global knowledge graph of companies worldwide. It enables autonomous AI agents to query verified company profiles, technology stacks, funding stages, hiring velocity, and competitor lookalikes.  
 - **Agentic Market Research:** Enables LLM reasoning loops to look up company firmographics and counterparty validity.
@@ -216,7 +216,7 @@ Contributions are warmly welcomed! 🌟 If you maintain or use an open-source ma
 2. 🌿 Create a dedicated branch: `git checkout -b feature/add-new-tool`.
 3. 📝 Add the project under the **Open-Source Software** section with:
    - Project name and repository link
-   - Social star count badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page
+   - Social Stars_Count badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page
    - Tech stack and license
    - Summary of capabilities and ideal use case
 4. 🔄 Update the **Table of Contents** and **Comparison Matrix**.
